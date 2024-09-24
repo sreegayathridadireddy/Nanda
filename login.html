@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Train Reservation System</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="login.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="loginsucess.html" class="btn-link">Login</a>
+            <style>
+                .btn-link {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #007BFF; /* Button color */
+                  color: white; /* Text color */
+                  text-align: center;
+                  text-decoration: none; /* Remove underline */
+                  border-radius: 5px; /* Rounded corners */
+                }
+              
+                .btn-link:hover {
+                  background-color: #0056b3; /* Button hover color */
+                  text-decoration: underline; /* Adds underline on hover */
+                }
+              </style>
+
+            <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+        </form>
+    </div>
+</body>
+</html>

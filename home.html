@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Reservation System</title>
+    <link rel="stylesheet" href="stylehome.css">
+</head>
+<body>
+    <header>
+        <h1>Train Reservation System</h1>
+    </header>
+
+    <section id="search">
+        <h2>Find Your Train</h2>
+        <form action="home.php" method="POST">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Enter departure city" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination city" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <a href="ticket.html" class="btn-link">Search</a>
+            <style>
+                .btn-link {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #007BFF; /* Button color */
+                  color: white; /* Text color */
+                  text-align: center;
+                  text-decoration: none; /* Remove underline */
+                  border-radius: 5px; /* Rounded corners */
+                }
+              
+                .btn-link:hover {
+                  background-color: #0056b3; /* Button hover color */
+                  text-decoration: underline; /* Adds underline on hover */
+                }
+              </style>
+
+        </form>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <p>Easy booking system, real-time train status, multiple payment options, and more.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Train Reservation System</p>
+    </footer>
+</body>
+</html>

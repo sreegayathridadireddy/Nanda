@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Train Reservation System</title>
+    <link rel="stylesheet" href="stylesignup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Create an Account</h1>
+        <form action="signup.php" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <a href="signsucess.html" class="btn-link">SignUp</a>
+            <style>
+                .btn-link {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #007BFF; /* Button color */
+                  color: white; /* Text color */
+                  text-align: center;
+                  text-decoration: none; /* Remove underline */
+                  border-radius: 5px; /* Rounded corners */
+                }
+              
+                .btn-link:hover {
+                  background-color: #0056b3; /* Button hover color */
+                  text-decoration: underline; /* Adds underline on hover */
+                }
+              </style>
+
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </form>
+    </div>
+</body>
+</html>

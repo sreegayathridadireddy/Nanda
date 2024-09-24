@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals - Train Reservation System</title>
+    <link rel="stylesheet" href="stylemeals.css">
+</head>
+<body>
+    <header>
+        <h1>Onboard Meals</h1>
+    </header>
+
+    <section id="meal-list">
+        <h2>Available Meals on Board</h2>
+        <p>We offer a wide range of meal options to make your journey comfortable and enjoyable. Choose from our selection of meals that cater to different preferences, including vegetarian, non-vegetarian, and special dietary needs.</p>
+
+        <!-- Form for selecting meals -->
+        <form action="confirmation.html" method="post"> <!-- Redirect to confirmation.html -->
+            <div class="meal meal-1">
+                <img src="https://i.pinimg.com/originals/16/ed/7f/16ed7f6b3d6ad709a73a8d8ff5d8a50a.jpg" alt="Vegetarian Meal">
+                <h3>Vegetarian Meal</h3>
+                <p>Includes: Rice, vegetables, dal, chapati, and dessert.</p>
+                <p>Price: ₹500</p>
+                <label>
+                    <input type="checkbox" name="meals[]" value="Vegetarian Meal"> Select Vegetarian Meal
+                </label>
+            </div>
+
+            <div class="meal meal-2">
+                <img src="https://i.pinimg.com/originals/20/92/48/2092483fde63dc2c9e3f2a0038c8af1f.jpg" alt="Non-Vegetarian Meal">
+                <h3>Non-Vegetarian Meal</h3>
+                <p>Includes: Chicken curry, rice, salad, and dessert.</p>
+                <p>Price: ₹600</p>
+                <label>
+                    <input type="checkbox" name="meals[]" value="Non-Vegetarian Meal"> Select Non-Vegetarian Meal
+                </label>
+            </div>
+
+            <div class="meal meal-3">
+                <img src="https://thecheaplazyvegan.com/wp-content/uploads/2020/08/vlw7bukQ-1152x1536.jpeg" alt="Vegan Meal">
+                <h3>Vegan Meal</h3>
+                <p>Includes: Vegan curry, quinoa, salad, and fresh fruit.</p>
+                <p>Price: ₹550</p>
+                <label>
+                    <input type="checkbox" name="meals[]" value="Vegan Meal"> Select Vegan Meal
+                </label>
+            </div>
+
+            <div class="meal meal-4">
+                <img src="https://eating-made-easy.com/wp-content/uploads/2014/10/3.jpg" alt="Kids Meal">
+                <h3>Kids Meal</h3>
+                <p>Includes: Mini pizza, juice, fruit snacks, and dessert.</p>
+                <p>Price: ₹400</p>
+                <label>
+                    <input type="checkbox" name="meals[]" value="Kids Meal"> Select Kids Meal
+                </label>
+            </div>
+
+            <div class="meal meal-5">
+                <img src="https://prepdish.com/wp-content/uploads/2021/02/Gluten-Free-Meal-Prep-1.jpg" alt="Gluten-Free Meal">
+                <h3>Gluten-Free Meal</h3>
+                <p>Includes: Grilled chicken, quinoa, salad, and dessert.</p>
+                <p>Price: ₹650</p>
+                <label>
+                    <input type="checkbox" name="meals[]" value="Gluten-Free Meal"> Select Gluten-Free Meal
+                </label>
+            </div>
+
+            <!-- Submit button to go to the next page -->
+            <a href="confimation.html" class="btn-link">Proceed to CheckOut</a>
+            <style>
+                .btn-link {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: black; /* Button color */
+                  color: aqua; /* Text color */
+                  text-align: center;
+                  text-decoration: none; /* Remove underline */
+                  border-radius: 5px; /* Rounded corners */
+                }
+              
+                .btn-link:hover {
+                  background-color: #0056b3; /* Button hover color */
+                  text-decoration: underline; /* Adds underline on hover */
+                }
+              </style>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Train Reservation System</p>
+    </footer>
+</body>
+</html>

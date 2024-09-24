@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Train Tickets</title>
+    <link rel="stylesheet" href="styleticket.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Train Ticket Booking</h1>
+        </header>
+        
+        <form class="booking-form">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+
+            <label for="departure">Departure Date:</label>
+            <input type="date" id="departure" name="departure" required>
+
+            <label for="return">Return Date (optional):</label>
+            <input type="date" id="return" name="return">
+
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" required oninput="updatePassengerFields()">
+
+            <div id="passenger-fields"></div>
+
+            <a href="final.html" class="btn-link">Book Now</a>
+            <style>
+                .btn-link {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #169440; /* Button color */
+                  color: white; /* Text color */
+                  text-align: center;
+                  text-decoration: none; /* Remove underline */
+                  border-radius: 5px; /* Rounded corners */
+                }
+              
+                .btn-link:hover {
+                  background-color: #0056b3; /* Button hover color */
+                  text-decoration: underline; /* Adds underline on hover */
+                }
+              </style>
+        </form>
+    </div>
+
+    <script>
+        function updatePassengerFields() {
+            const numPassengers = document.getElementById('passengers').value;
+            const passengerFields = document.getElementById('passenger-fields');
+            passengerFields.innerHTML = '';
+
+            for (let i = 0; i < numPassengers; i++) {
+                passengerFields.innerHTML += `
+                    <fieldset>
+                        <legend>Passenger ${i + 1}</legend>
+                        <label for="passenger-name-${i}">Name:</label>
+                        <input type="text" id="passenger-name-${i}" name="passenger-name-${i}" required>
+
+                        <label for="passenger-age-${i}">Age:</label>
+                        <input type="number" id="passenger-age-${i}" name="passenger-age-${i}" min="0" required>
+                    </fieldset>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

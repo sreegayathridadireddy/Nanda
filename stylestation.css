@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section#station-list {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.station {
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+/* Assign different background colors to each station */
+.station-1 {
+    background-color: #ff9999; /* Light Red */
+}
+
+.station-2 {
+    background-color: #99ccff; /* Light Blue */
+}
+
+.station-3 {
+    background-color: #99ff99; /* Light Green */
+}
+
+.station-4 {
+    background-color: #ffcc99; /* Light Orange */
+}
+
+.station-5 {
+    background-color: #ffccff; /* Light Pink */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
